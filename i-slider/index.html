@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>i-slider</title>
+	<script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+	<style>
+		*{
+			padding: 0;
+			margin: 0;
+		}
+		body{
+			background-color: #222222;
+		}
+		.item-1-right-wrap{
+		    width: 40%;
+		    height: 750px;
+		    position: absolute;
+		    top: 0;
+		    bottom: 0;
+		    left: 0;
+		    right: 0;
+		    margin: auto;
+		}
+		#yixing ul li img {
+		    width: 100%;
+		    height: 100%;
+		}
+		#yixing{ width: 100%; height: 100%;position: relative; overflow: hidden; }
+		.zuoanniu{display: block;width: 43px; height: 43px; position: absolute; top:0px;bottom:0;left:-65px;margin: auto; cursor: pointer;}
+		.youanniu{display: block; width: 43px; height: 43px; position: absolute; top:0px;bottom:0;right:-65px;margin: auto; cursor: pointer;}
+		#yixing ul{ list-style: none; }
+		#yixing ul li{ position: absolute; }
+		#yixing ul li img{ width: 100%; height: 100%; }
+		#yixing ul li.no0{ width:9.5%; height:410px; top:0px;bottom:0;margin: auto; left:-25%; opacity: 0;}
+		#yixing ul li.no1{ width:9.5%; height:410px; top:0px;bottom:0;margin: auto; left:-12.5%;  opacity: 0;}
+		#yixing ul li.no2{ width:9.5%; height:480px; top:0px;bottom:0;margin: auto;  left:0;  opacity: 1;}
+		#yixing ul li.no3{ width:9.5%; height:580px; top:0px;bottom:0;margin: auto;  left:12.5%; opacity: 1; }
+		#yixing ul li.no4{ width:9.5%; height:660px; top:0px;bottom:0;margin: auto;  left:25%; opacity: 1; }
+		#yixing ul li.no5{ width:10.8%; height:746px; top:0px;bottom:0;margin: auto;  left:37.5%; opacity: 1; }
+		#yixing ul li.no6{ width:9.5%; height:660px; top:0px;bottom:0;margin: auto;  left:50%; opacity: 1; }
+		#yixing ul li.no7{ width:9.5%; height:580px; top:0px;bottom:0;margin: auto;  left:62.5%; opacity: 1; }
+		#yixing ul li.no8{ width:9.5%; height:480px; top:0px;bottom:0;margin: auto;  left:75%; opacity: 1; }
+		#yixing ul li.no9{ width:9.5%; height:410px; top:0px;bottom:0;margin: auto;  left:87.5%; opacity: 1; }
+		#yixing ul li.no10{ width:9.5%; height:520px;top:0px;bottom:0;margin: auto;   left:100%; opacity: 0; }
+		#yixing ul li.no11{ width:9.5%; height:620px;top:0px;bottom:0;margin: auto;  left:112.5%; opacity: 0; }
+		#yixing ul li.no12{ width:9.5%; height:700px;top:0px;bottom:0;margin: auto;  left:125%; opacity: 0; }
+		#yixing ul li.no13{ width:10.8%; height:750px;top:0px;bottom:0;margin: auto;  left:137.5%; opacity: 0; }
+		#yixing ul li.no14{ width:9.5%; height:700px;top:0px;bottom:0;margin: auto;   left:150%; opacity: 0; }
+		#yixing ul li.no15{ width:9.5%; height:620px;top:0px;bottom:0;margin: auto;   left:162.5%; opacity: 0; }
+		#yixing ul li.no16{ width:9.5%; height:520px;top:0px;bottom:0;margin: auto;  left:175%; opacity: 0; }
+		#yixing ul li.no17{ width:9.5%; height:450px;top:0px;bottom:0;margin: auto;   left:187.5%; opacity: 0; }
+		.no5{
+		    box-shadow: 0px 3px 13px 1px rgba(255,255,255,1);
+		}
+	
+	</style>
+</head>
+<body>
+    <div class="item-1-right-wrap">
+        <div id="yixing">
+            <ul id="gen-ul">
+                <li class="no0 gen-li">
+                    <img src="http://img.kytingting.com/Novel-Upload-Image-2019-08-06 10:34:26-66d3566146de47cf8af0907936b32af3.jpg" class="genres-img" />
+                </li>
+                <li class="no1 gen-li">
+                    <img src="http://img.kytingting.com/Novel-Upload-Image-2019-08-06 10:35:19-36a8d480bf0645779a93b13be03f8282.jpg" class="genres-img" />
+                </li>
+                <li class="no2 gen-li">
+                    <img src="http://img.kytingting.com/Novel-Upload-Image-2019-08-05 19:37:15-2a55f94a749a42509816fa20f7c2342d.jpg" class="genres-img" />
+                </li>
+                <li class="no3 gen-li">
+                    <img src="http://img.kytingting.com/Novel-Upload-Image-2019-08-06 10:36:18-b8e1c703247442098d703c33aa4c2b28.jpg" class="genres-img" />
+                </li>
+                <li class="no4 gen-li">
+                    <img src="http://img.kytingting.com/Novel-Upload-Image-2019-08-06 10:29:28-315318f31b294dbaba91aeb0015e669d.jpg" class="genres-img" />
+                </li>
+                <li class="no5 gen-li">
+                    <img src="http://img.kytingting.com/Novel-Upload-Image-2019-08-05 19:31:05-373d83d1cd9b4f99a3fdbdbc58d68043.jpg" class="genres-img" />
+                </li>
+                <li class="no6 gen-li">
+                    <img src="http://img.kytingting.com/Novel-Upload-Image-2019-08-06 10:29:00-e1685ee9b2ea49f495a8a857430aad01.jpg" class="genres-img" />
+                </li>
+                <li class="no7 gen-li">
+                    <img src="http://img.kytingting.com/Novel-Upload-Image-2019-08-06 10:31:37-773468329f174dfaa27a574052dfdb41.jpg" class="genres-img" />
+                </li>
+                <li class="no8 gen-li">
+                    <img src="http://img.kytingting.com/Novel-Upload-Image-2019-08-06 10:32:50-3ddaf17fd5b14dc384644c63f62ddb82.jpg" class="genres-img" />
+                </li>
+                <li class="no9 gen-li">
+                    <img src="http://img.kytingting.com/Novel-Upload-Image-2019-08-06 10:33:25-ab8ec4a828954c7dbea33cd0795d0067.jpg" class="genres-img" />
+                </li>
+                <li class="no10 gen-li">
+                    <img src="http://img.kytingting.com/Novel-Upload-Image-2019-08-05 19:31:33-a8f59f01e5294b22a1bb1d1d875c8d09.jpg" class="genres-img" />
+                </li>
+                <li class="no11 gen-li">
+                    <img src="http://img.kytingting.com/Novel-Upload-Image-2019-08-06 10:35:47-54491f1497874e10ac3357bffd94b719.jpg" class="genres-img" />
+                </li>
+                <li class="no12 gen-li">
+                    <img src="http://img.kytingting.com/Novel-Upload-Image-2019-08-06 10:30:09-0f003a73779a4b8da47bdf12a33b726d.jpg" class="genres-img" />
+                </li>
+                <li class="no13 gen-li">
+                    <img src="http://img.kytingting.com/Novel-Upload-Image-2019-08-12 10:23:07-63233310bae14b7da795806d7c2da23c.jpg" class="genres-img" />
+                </li>
+                <li class="no14 gen-li">
+                    <img src="http://img.kytingting.com/Novel-Upload-Image-2019-08-06 10:32:09-b0048cb09a3c45e693d4e1da9a24e9e6.jpg" class="genres-img" />
+                </li>
+                <li class="no15 gen-li">
+                    <img src="http://img.kytingting.com/Novel-Upload-Image-2019-08-06 10:32:31-c52a22cd3c7b4ef580280a5a9c5a2689.jpg" class="genres-img" />
+                </li>
+                <li class="no16 gen-li">
+                    <img src="http://img.kytingting.com/Novel-Upload-Image-2019-08-06 10:32:31-c52a22cd3c7b4ef580280a5a9c5a2689.jpg" class="genres-img" />
+                </li>
+            </ul>
+        </div>
+        <span class="zuoanniu gen-button"><img src="img/zuo.png" alt="left"></span>
+        <span class="youanniu gen-button"><img src="img/you.png" alt="right"></span>
+    </div>
+    <script>
+    	
+
+        $(document).ready(
+
+            function(){
+            	 // alert('asd')
+                var json0  = { "width":"10.8%", "height":410, "top":0,"bottom":0,"margin":'auto', opacity:0, "left":"-25%"};
+                var json1  = { "width":"10.8%", "height":410, "top":0,"bottom":0,"margin":'auto', opacity:0, "left":"-12.5%"};
+                var json2  = { "width":"10.2%", "height":480, "top":0,"bottom":0,"margin":'auto', opacity:1, "left":0}
+                var json3  = { "width":"10.8%", "height":580, "top":0,"bottom":0,"margin":'auto', opacity:1, "left":"12.5%"}
+                var json4  = { "width":"10.8%", "height":660, "top":0,"bottom":0,"margin":'auto', opacity:1, "left":"25%" }
+                var json5  = { "width":"10.8%", "height":746, "top":0,"bottom":0,"margin":'auto', opacity:1, "left":"37.5%" }
+                var json6  = { "width":"10.8%", "height":660, "top":0,"bottom":0,"margin":'auto', opacity:1, "left":"50%"}
+                var json7  = { "width":"10.8%", "height":580, "top":0,"bottom":0,"margin":'auto', opacity:1, "left":"62.5%" }
+                var json8  = { "width":"10.8%", "height":480, "top":0,"bottom":0,"margin":'auto', opacity:1, "left":"75%" }
+                var json9  = { "width":"10.8%", "height":410, "top":0,"bottom":0,"margin":'auto', opacity:1, "left":"87.5%" }
+                var json10 = { "width":"10.8%", "height":340, "top":0,"bottom":0,"margin":'auto', opacity:0, "left":"100%" }
+                var json11 = { "width":"10.8%", "height":340, "top":0,"bottom":0,"margin":'auto', opacity:0, "left":"125%" }
+
+
+
+                $(".youanniu").click(
+                    function(){
+
+                        if(!$("#yixing li").is(":animated")){
+                            //先交换位置
+                            $(".no0").animate(json11,400);
+                            $(".no1").animate(json0,400);
+                            $(".no2").animate(json1,400);
+                            $(".no3").animate(json2,400);
+                            $(".no4").animate(json3,400);
+                            $(".no5").animate(json4,400);
+                            $(".no6").animate(json5,400);
+                            $(".no7").animate(json6,400);
+                            $(".no8").animate(json7,400);
+                            $(".no9").animate(json8,400);
+                            $(".no10").animate(json9,400);
+                            $(".no11").animate(json10,400);
+
+                            //再交换身份
+                            $(".no0").attr("class","no11");
+                            $(".no1").attr("class","no0");
+                            $(".no2").attr("class","no1");
+                            $(".no3").attr("class","no2");
+                            $(".no4").attr("class","no3");
+                            $(".no5").attr("class","no4");
+                            $(".no6").attr("class","no5");
+                            $(".no7").attr("class","no6");
+                            $(".no8").attr("class","no7");
+                            $(".no9").attr("class","no8");
+                            $(".no10").attr("class","no9" );
+                            $(".no11").attr("class","no10");
+                        }
+                    }
+                );
+                $(".zuoanniu").click(
+                    function(){
+
+                        if(!$("#yixing li").is(":animated")){
+
+                            $(".no0").animate(json1,400);
+                            $(".no1").animate(json2,400);
+                            $(".no2").animate(json3,400);
+                            $(".no3").animate(json4,400);
+                            $(".no4").animate(json5,400);
+                            $(".no5").animate(json6,400);
+                            $(".no6").animate(json7,400);
+                            $(".no7").animate(json8,400);
+                            $(".no8").animate(json9,400);
+                            $(".no9").animate(json10,400);
+                            $(".no10").animate(json11,400);
+                            $(".no11").animate(json0,400);
+
+                            $(".no11").attr("class","no0");
+                            $(".no10").attr("class","no11");
+                            $(".no9").attr("class","no10");
+                            $(".no8").attr("class","no9");
+                            $(".no7").attr("class","no8");
+                            $(".no6").attr("class","no7");
+                            $(".no5").attr("class","no6");
+                            $(".no4").attr("class","no5");
+                            $(".no3").attr("class","no4");
+                            $(".no2").attr("class","no3");
+                            $(".no1").attr("class","no2");
+                            $(".no0").attr("class","no1");
+
+                        }
+                    }
+                );
+
+            }
+
+        );
+
+    
+    </script>	
+</body>
+</html>
